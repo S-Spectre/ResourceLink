@@ -1,0 +1,33 @@
+/* Request Management Page */
+.request-management {
+    padding: 50px 0;
+}
+
+.request-item {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.request-actions {
+    margin-top: 15px;
+}
+
+.primary-btn {
+    background-color: #6C63FF;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.secondary-btn {
+    background-color: #FF6F61;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}

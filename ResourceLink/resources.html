@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ResourceLink - Resources</title>
+    <link rel="stylesheet" href="css/resources.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="main-header">
+      
+            <div class="logo">
+                <img src="images/Logo2.jpg" alt="ResourceLink Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="messages.html">Messages</a></li>
+                    <li><a href="forum.html">Forum</a></li>
+                    <li><a href="#" class="cta-btn">Login</a></li>
+                </ul>
+            </nav>
+        
+    </header>
+
+    <!-- Resource Listing Section -->
+    <section class="resource-list">
+        <div class="container">
+            <h2 style="color: white;">Available Resources</h2>
+
+             <!-- Search and Filter Section -->
+    <section class="search-filter-section">
+       
+
+            <div class="filters">
+                <label for="category">Filter by Category:</label>
+                <select id="category" onchange="filterResources()">
+                    <option value="all">All</option>
+                    <option value="tools">Tools</option>
+                    <option value="equipment">Equipment</option>
+                    <option value="vehicles">Vehicles</option>
+                    <option value="furniture">Furniture</option>
+                </select>
+
+                <label for="sort">Sort by:</label>
+                <select id="sort" onchange="sortResources()">
+                    <option value="popularity">Popularity</option>
+                    <option value="availability">Availability</option>
+                    <option value="recent">Recently Added</option>
+                </select>
+            </div>
+        </div>
+    </section>
+
+            <!-- Resource Cards -->
+            <div id="resource-grid" class="resource-grid">
+                <!-- Resource Cards will be dynamically loaded here -->
+            </div>
+
+            <!-- Pagination -->
+            <div id="pagination" class="pagination">
+                <a href="#" id="prev-page" onclick="handlePagination('prev')">&#8249; Prev</a>
+                <span id="page-number">1</span>
+                <a href="#" id="next-page" onclick="handlePagination('next')">Next &#8250;</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2024 ResourceLink. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
